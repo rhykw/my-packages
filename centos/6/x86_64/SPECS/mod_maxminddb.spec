@@ -12,7 +12,7 @@ Source1:	https://raw.githubusercontent.com/rhykw/my-packages/master/centos/6/x86
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 BuildRequires:	libmaxminddb-devel , httpd-devel
-Requires:	libmaxminddb-devel , httpd
+Requires:	libmaxminddb , httpd
 
 %description
 This module allows you to query MaxMind DB files from Apache 2.2+ using the libmaxminddb library.
